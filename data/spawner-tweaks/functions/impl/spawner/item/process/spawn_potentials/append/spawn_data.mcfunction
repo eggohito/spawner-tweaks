@@ -5,6 +5,6 @@
 #@within function spawner-tweaks:impl/spawner/item/process
 
 
-data modify storage spawner:tweaks temp.item.SpawnPotentials append value {weight: 1, data: {}}
+data modify storage spawner:tweaks temp.spawner.SpawnPotentials append value {weight: 1, data: {}}
 
-data modify storage spawner:tweaks temp.item.SpawnPotentials[-1].data set from storage spawner:tweaks temp.item.SpawnData
+data modify storage spawner:tweaks temp.spawner.SpawnPotentials[-1].data set from storage spawner:tweaks temp.spawner.SpawnData

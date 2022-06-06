@@ -6,7 +6,7 @@
 
 
 #   Get the copied Spawner data from the Barrel placeholder item
-data modify storage spawner:tweaks temp.item set from entity @e[type = minecraft:item, tag = spawner_tweaks.selected.placeholder_item, limit = 1] Item.tag.BlockEntityTag.Items[0].tag.spawner_tweaks
+data modify storage spawner:tweaks temp.spawner set from entity @e[type = minecraft:item, tag = spawner_tweaks.selected.placeholder_item, limit = 1] Item.tag.BlockEntityTag.Items[0].tag.spawner_tweaks
 
 
 #   Summon a new Spawner Minecart entity

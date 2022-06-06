@@ -6,7 +6,7 @@
 
 
 #   Process the `SpawnPotentials` NBT of the Barrel placeholder item
-data modify storage spawner:tweaks temp.process.input set from storage spawner:tweaks temp.item
+data modify storage spawner:tweaks temp.process.input set from storage spawner:tweaks temp.spawner
 
 execute store result score #spawn_potentials spawner-tweaks if data storage spawner:tweaks temp.process.input.SpawnPotentials[]
 
