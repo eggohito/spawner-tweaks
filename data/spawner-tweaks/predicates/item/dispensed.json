@@ -1,0 +1,89 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:location_check",
+            "offsetX": 1,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "minecraft:dispenser"
+                    ],
+                    "state": {
+                        "triggered": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "offsetY": 1,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "minecraft:dispenser"
+                    ],
+                    "state": {
+                        "triggered": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "offsetZ": 1,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "minecraft:dispenser"
+                    ],
+                    "state": {
+                        "triggered": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "offsetX": -1,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "minecraft:dispenser"
+                    ],
+                    "state": {
+                        "triggered": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "offsetY": -1,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "minecraft:dispenser"
+                    ],
+                    "state": {
+                        "triggered": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "offsetZ": -1,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "minecraft:dispenser"
+                    ],
+                    "state": {
+                        "triggered": true
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:barrel"
+                }
+            ],
+            "functions": [
+                {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{CustomModelData: 3660, HideFlags: 1,spawner_tweaks: {ToBeProcessed: 1b, placeholder: 1b}}"
+                },
+                {
+                    "function": "minecraft:set_name",
+                    "name": {
+                        "translate": "Packaged Spawner",
+                        "color": "light_purple",
+                        "italic": false
+                    }
+                },
+                {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                        "minecraft:infinity": 1
+                    }
+                },
+                {
+                    "function": "minecraft:set_contents",
+                    "type": "minecraft:barrel",
+                    "entries": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:egg",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_nbt",
+                                    "tag": "{spawner_tweaks: {ToBeProcessed: 1b}}"
+                                },
+                                {
+                                    "function": "minecraft:copy_nbt",
+                                    "source": "this",
+                                    "ops": [
+                                        {
+                                            "source": "data.spawner_tweaks.MaxNearbyEntities",
+                                            "target": "spawner_tweaks.MaxNearbyEntities",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "data.spawner_tweaks.MaxSpawnDelay",
+                                            "target": "spawner_tweaks.MaxSpawnDelay",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "data.spawner_tweaks.MinSpawnDelay",
+                                            "target": "spawner_tweaks.MinSpawnDelay",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "data.spawner_tweaks.RequiredPlayerRange",
+                                            "target": "spawner_tweaks.RequiredPlayerRange",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "data.spawner_tweaks.SpawnCount",
+                                            "target": "spawner_tweaks.SpawnCount",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "data.spawner_tweaks.SpawnData",
+                                            "target": "spawner_tweaks.SpawnData",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "data.spawner_tweaks.SpawnPotentials",
+                                            "target": "spawner_tweaks.SpawnPotentials",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "data.spawner_tweaks.SpawnRange",
+                                            "target": "spawner_tweaks.SpawnRange",
+                                            "op": "replace"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

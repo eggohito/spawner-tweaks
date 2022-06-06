@@ -26,11 +26,11 @@ setblock ~ ~ ~ minecraft:spawner
 
 data modify block ~ ~ ~ {} merge from storage spawner:tweaks temp.block
 
+
+#   Process the `SpawnData` NBT of the Spawner
 data remove block ~ ~ ~ SpawnData
 
 execute if score randomize_spawn_data spawner-tweaks matches 0 if data storage spawner:tweaks temp.block.SpawnData run data modify block ~ ~ ~ SpawnData set from storage spawner:tweaks temp.block.SpawnData
-
-execute if score randomize_spawn_data spawner-tweaks matches 0 unless data storage spawner:tweaks temp.block.SpawnData run function spawner-tweaks:impl/spawner/block/randomize/spawn_data
 
 
 #   Do some clean up
