@@ -9,10 +9,10 @@ A datapack that provide tweaks for the Spawner block, such as making it obtainab
 
 This datapack provides the `spawner-tweaks` scoreboard objective for configuration. In this scoreboard objective, you can find two score holders:
 
-Score Holder         | Default | Description
----------------------|---------|------------
-`scan_radius`        | `11`    | Determines the radius for scanning placed blocks.
-`shuffle_spawn_data` | `1`     | Determines whether the `SpawnData` NBT of a Spawner should persist.
+Score Holder         | Default | Min | Max  |Description
+---------------------|---------|-----|------|---
+`scan_radius`        | `11`    | `1` | `20` | Determines the radius for scanning placed blocks.
+`shuffle_spawn_data` | `1`     | `0` | `1`  | Determines whether the `SpawnData` NBT of a Spawner should persist.
 <br>
 
 
