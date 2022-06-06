@@ -14,6 +14,14 @@
 
 
 #>
+#   > Score holders used as config flags
+#
+#@internal
+    #declare score_holder scan_radius
+    #declare score_holder randomize_spawn_data
+
+
+#>
 #
 #   > Score holders used for the 'block scanning' method by CloudWolf
 #

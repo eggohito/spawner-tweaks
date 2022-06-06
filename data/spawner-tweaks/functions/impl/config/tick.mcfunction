@@ -11,7 +11,7 @@ execute if score scan_radius spawner-tweaks matches ..0 run function spawner-twe
 execute if score scan_radius spawner-tweaks matches 21.. run function spawner-tweaks:impl/config/scan_radius/max
 
 
-#   Check if the `shuffle_spawn_data` config flag has a score that are not within its `0..1` score range
-execute if score shuffle_spawn_data spawner-tweaks matches ..-1 run function spawner-tweaks:impl/config/shuffle_spawn_data/min
+#   Check if the `randomize_spawn_data` config flag has a score that are not within its `0..1` score range
+execute if score randomize_spawn_data spawner-tweaks matches ..-1 run function spawner-tweaks:impl/config/randomize_spawn_data/min
 
-execute if score shuffle_spawn_data spawner-tweaks matches 2.. run function spawner-tweaks:impl/config/shuffle_spawn_data/max
+execute if score randomize_spawn_data spawner-tweaks matches 2.. run function spawner-tweaks:impl/config/randomize_spawn_data/max

@@ -13,8 +13,8 @@ data modify storage spawner:tweaks temp.item set from entity @s Item.tag.BlockEn
 execute if data storage spawner:tweaks temp.item.SpawnData unless data storage spawner:tweaks temp.item.SpawnPotentials[] run function spawner-tweaks:impl/spawner/item/process/spawn_potentials/append/spawn_data
 
 
-#   Remove the `SpawnData` NBT of the Barrel placeholder item if the score of the `shuffle_spawn_data` score holder in the `spawner-tweaks` scoreboard objective is 1
-execute if score shuffle_spawn_data spawner-tweaks matches 1 run data remove storage spawner:tweaks temp.item.SpawnData
+#   Remove the `SpawnData` NBT of the Barrel placeholder item if the score of the `randomize_spawn_data` score holder in the `spawner-tweaks` scoreboard objective is 1
+execute if score randomize_spawn_data spawner-tweaks matches 1 run data remove storage spawner:tweaks temp.item.SpawnData
 
 
 #   Process the `SpawnPotentials` NBT of the Barrel placeholder item

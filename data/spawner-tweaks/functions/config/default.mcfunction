@@ -7,4 +7,4 @@
 
 scoreboard players set scan_radius spawner-tweaks 11
 
-scoreboard players set shuffle_spawn_data spawner-tweaks 1
+scoreboard players set randomize_spawn_data spawner-tweaks 1
