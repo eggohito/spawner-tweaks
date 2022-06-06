@@ -1,0 +1,6 @@
+{
+    "values": [
+        "random:private/load",
+        "spawner-tweaks:private/load"
+    ]
+}

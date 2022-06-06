@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "this": {
+            "trigger": "minecraft:changed_dimension"
+        }
+    },
+    "rewards": {
+        "function": "spawner-tweaks:impl/enter_dimension"
+    }
+}

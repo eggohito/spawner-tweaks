@@ -1,0 +1,102 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:barrel"
+                }
+            ],
+            "functions": [
+                {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{CustomModelData: 3660, HideFlags: 1,spawner_tweaks: {ToBeProcessed: 1b, placeholder: 1b}}"
+                },
+                {
+                    "function": "minecraft:set_name",
+                    "name": {
+                        "translate": "Barrel o' Mobs",
+                        "color": "light_purple",
+                        "italic": false
+                    }
+                },
+                {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                        "minecraft:infinity": 1
+                    }
+                },
+                {
+                    "function": "minecraft:set_contents",
+                    "type": "minecraft:barrel",
+                    "entries": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:egg",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_nbt",
+                                    "tag": "{spawner_tweaks: {ToBeProcessed: 1b}}"
+                                },
+                                {
+                                    "function": "minecraft:copy_nbt",
+                                    "source": "block_entity",
+                                    "ops": [
+                                        {
+                                            "source": "MaxNearbyEntities",
+                                            "target": "spawner_tweaks.MaxNearbyEntities",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "MaxSpawnDelay",
+                                            "target": "spawner_tweaks.MaxSpawnDelay",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "MinSpawnDelay",
+                                            "target": "spawner_tweaks.MinSpawnDelay",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "RequiredPlayerRange",
+                                            "target": "spawner_tweaks.RequiredPlayerRange",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "SpawnCount",
+                                            "target": "spawner_tweaks.SpawnCount",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "SpawnData",
+                                            "target": "spawner_tweaks.SpawnData",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "SpawnPotentials",
+                                            "target": "spawner_tweaks.SpawnPotentials",
+                                            "op": "replace"
+                                        },
+                                        {
+                                            "source": "SpawnRange",
+                                            "target": "spawner_tweaks.SpawnRange",
+                                            "op": "replace"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:reference",
+                    "name": "spawner-tweaks:can_mine_spawners"
+                }
+            ]
+        }
+    ]
+}

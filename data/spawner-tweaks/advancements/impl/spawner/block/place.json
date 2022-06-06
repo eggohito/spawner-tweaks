@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "barrel_placeholder": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "item": {
+                    "nbt": "{spawner_tweaks: {placeholder: 1b}}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "spawner-tweaks:impl/spawner/block/place"
+    }
+}

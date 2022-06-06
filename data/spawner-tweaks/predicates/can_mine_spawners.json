@@ -1,0 +1,23 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+                "tag": "spawner-tweaks:can_mine_spawners",
+                "enchantments": [
+                    {
+                        "enchantment": "minecraft:silk_touch"
+                    }
+                ]
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags: [\"spawner_tweaks.override\"]}"
+            }
+        }
+    ]
+}
