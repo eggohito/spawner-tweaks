@@ -15,10 +15,14 @@ gamerule maxCommandChainLength 100000
 scoreboard objectives add spawner-tweaks dummy
 
 
-#   Display a load/reload message
-execute unless score #isLoaded spawner-tweaks = #isLoaded spawner-tweaks run tellraw @a[tag = spawner_tweaks.debugger] {"text": "[+ Loaded \"Spawner Tweaks\" by eggohito]", "color": "green"}
+#   Check for updates
+function spawner-tweaks:private/update
 
-execute if score #isLoaded spawner-tweaks = #isLoaded spawner-tweaks run tellraw @a[tag = spawner_tweaks.debugger] {"text": "[= Reloaded \"Spawner Tweaks\" by eggohito]", "color": "gold"}
+
+#   Display a load/reload message
+execute unless score #isLoaded spawner-tweaks = #isLoaded spawner-tweaks run tellraw @a[tag = spawner_tweaks.debugger] {"translate": "[+ Loaded \"Spawner Tweaks\" @ v%1$s.%2$s.%3$s by eggohito]", "color": "green", "with": [{"storage": "spawner:tweaks", "nbt": "root.semver.major"}, {"storage": "spawner:tweaks", "nbt": "root.semver.minor"}, {"storage": "spawner:tweaks", "nbt": "root.semver.patch"}]}
+
+execute if score #isLoaded spawner-tweaks = #isLoaded spawner-tweaks run tellraw @a[tag = spawner_tweaks.debugger] {"translate": "[= Reloaded \"Spawner Tweaks\" @ v%1$s.%2$s.%3$s by eggohito]", "color": "gold", "with": [{"storage": "spawner:tweaks", "nbt": "root.semver.major"}, {"storage": "spawner:tweaks", "nbt": "root.semver.minor"}, {"storage": "spawner:tweaks", "nbt": "root.semver.patch"}]}
 
 
 #   Set the default values for the config flags
