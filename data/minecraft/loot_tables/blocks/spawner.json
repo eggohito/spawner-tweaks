@@ -17,7 +17,7 @@
                 {
                     "function": "minecraft:set_name",
                     "name": {
-                        "translate": "Barrel o' Mobs",
+                        "translate": "Packaged Spawner",
                         "color": "light_purple",
                         "italic": false
                     }
