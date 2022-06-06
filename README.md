@@ -1,6 +1,7 @@
 #   Spawner Tweaks
 
 A datapack that provide tweaks for the Spawner block, such as making it obtainable via Silk Touch.
+
 <br>
 
 
@@ -17,5 +18,5 @@ Score Holder         | Default | Description
 
 ##  Credits
 
-[CloudWolf](https://www.youtube.com/c/CloudWolfMinecraft) - For the ['Block Scanning'](https://www.youtube.com/watch?v=mjn1Y60QcZg) method.
-[Aeldrion](https://github.com/Aeldrion) - For the [Random](https://github.com/Aeldrion/Minecraft-Random) datapack.
+* [CloudWolf](https://www.youtube.com/c/CloudWolfMinecraft) - For the ['Block Scanning'](https://www.youtube.com/watch?v=mjn1Y60QcZg) method.
+* [Aeldrion](https://github.com/Aeldrion) - For the [Random](https://github.com/Aeldrion/Minecraft-Random) datapack.
