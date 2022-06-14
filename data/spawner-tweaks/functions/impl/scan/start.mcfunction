@@ -5,6 +5,10 @@
 #@internal
 
 
+#   Revoke the advancement
+advancement revoke @s only spawner-tweaks:impl/scan/start
+
+
 #   Prepare the delta values before doing the scan
 scoreboard players operation #scan_dx spawner-tweaks = scan_radius spawner-tweaks
 

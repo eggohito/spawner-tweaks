@@ -11,8 +11,8 @@
 scoreboard players remove #scan_dx spawner-tweaks 1
 
 
-#   Summon a marker entity to mark a spawner block
-execute align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~ ~ minecraft:barrel run function spawner-tweaks:impl/scan/found_block
+#   Process the Barrel blocks used as a placeholder for Spawner blocks
+execute align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~ ~ minecraft:barrel{Items: [{tag: {spawner_tweaks: {ToBeProcessed: 1b}}}]} run function spawner-tweaks:impl/block/process/start
 
 
 #   Loop this function until the score of the `#scan_dx` score holder is 0 or less

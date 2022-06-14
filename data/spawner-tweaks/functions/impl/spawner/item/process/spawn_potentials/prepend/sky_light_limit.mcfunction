@@ -1,8 +1,0 @@
-#> spawner-tweaks:impl/spawner/item/process/spawn_potentials/prepend/sky_light_limit
-#
-#@within function spawner-tweaks:impl/spawner/item/process/spawn_potentials/loop
-
-
-data modify block -30000000 0 1603 Text1 set value '{"translate": "    - sky_light_limit: %s", "color": "gray", "italic": false, "with": [{"storage": "spawner:tweaks", "nbt": "temp.process.input.SpawnPotentials[-1].data.custom_spawn_rules.sky_light_limit"}]}'
-
-data modify storage spawner:tweaks temp.process.output prepend from block -30000000 0 1603 Text1

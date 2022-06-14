@@ -3,7 +3,7 @@
 #   > Move the origin vector to the negative X axis
 #
 #@within
-#   function spawner-tweaks:impl/scan
+#   function spawner-tweaks:impl/scan/start
 #   function spawner-tweaks:impl/scan/origin/x
 
 
